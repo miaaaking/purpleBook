@@ -16,7 +16,11 @@ repositories {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
-    testImplementation('org.springframework.book:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-mustache')
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+
+    implementation('org.projectlombok:lombok:')
 }
 
 test {
