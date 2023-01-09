@@ -20,7 +20,16 @@ dependencies {
 
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
-    implementation('org.projectlombok:lombok:')
+    implementation 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+    testImplementation 'org.projectlombok:lombok:1.18.20'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
 }
 
 test {
