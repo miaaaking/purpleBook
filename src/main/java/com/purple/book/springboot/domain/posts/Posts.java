@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity // 테이블과 링크될 클래스임 (Setter 메소드 x)
-@Table(name = "posts")
 public class Posts {
 
     @Id // pk
