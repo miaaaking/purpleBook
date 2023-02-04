@@ -1,6 +1,6 @@
 package com.purple.book.springboot.web.dto;
 
-import com.purple.book.springboot.web.domain.posts.Posts;
+import com.purple.book.springboot.domain.posts.Posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

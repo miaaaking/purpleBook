@@ -1,4 +1,4 @@
-package com.purple.book.springboot.web.domain.posts;
+package com.purple.book.springboot.domain.posts;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

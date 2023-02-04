@@ -1,4 +1,4 @@
-package com.purple.book.springboot.web.domain.posts;
+package com.purple.book.springboot.domain.posts;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity // 테이블과 링크될 클래스임 (Setter 메소드 x)
+@Table(name = "posts")
 public class Posts {
 
     @Id // pk
@@ -27,5 +28,9 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 }
