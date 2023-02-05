@@ -1,5 +1,6 @@
 package com.purple.book.springboot.domain.posts;
 
+import com.purple.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity // 테이블과 링크될 클래스임 (Setter 메소드 x)
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // pk
     @GeneratedValue(strategy = GenerationType.IDENTITY) // pk생성규칙
